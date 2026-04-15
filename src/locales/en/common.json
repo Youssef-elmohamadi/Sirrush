@@ -1,0 +1,25 @@
+{
+    "currency":"EGP",
+    "english":"English",
+    "arabic":"Arabic",
+        "TopBar":{
+        "contact_number":"Direct Contact Number"
+    },
+    "header": {
+    "search_placeholder": "ابحث عن منتجات، فئات...",
+    "hello": "أهلاً",
+    "account": "حسابي"
+  },
+  "navbar": {
+    "all_categories": "جميع الفئات",
+    "saving_bundles": "وفر مع الباقات",
+    "offers": "عروض",
+    "large_appliances": "أجهزة كبيرة",
+    "home_furniture": "أثاث منزلي",
+    "hood": "شفاطات",
+    "doors": "أبواب",
+    "new": "جديد",
+    "cart_items": "{count} منتج",
+    "currency": "ج.م"
+  }
+}

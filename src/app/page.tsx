@@ -1,65 +1,127 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "framer-motion";
+import TypewriterComponent from "typewriter-effect";
 
 export default function Home() {
+  const containerVariants = {
+    hidden: {},
+    show: {
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    show: { opacity: 1, y: 0 },
+  };
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <motion.section
+      initial={{ opacity: 0, scale: 1 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      className="relative h-[600px] flex items-center justify-center overflow-hidden"
+    >
+      {/* الصورة */}
+      <Image
+        src="/hero.webp"
+        alt="Landing Background"
+        fill
+        className="object-cover object-center "
+        priority
+      />
+
+      {/* Wrapper علشان نربطهم ببعض */}
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        animate="show"
+        className="absolute z-50 top-30 left-1/2 transform -translate-x-1/2 flex items-center justify-center gap-4"
+      >
+        {/* Box */}
+        <motion.div
+          initial={{ width: 0, opacity: 0 }}
+          animate={{ width: "auto", opacity: 1 }}
+          transition={{ duration: 0.6 }}
+          className="overflow-hidden border-3 border-deep-navy px-4 py-2 text-deep-navy text-xl font-bold whitespace-nowrap"
+        >
+          <TypewriterComponent
+            options={{
+              strings: ["Creative", "Ambitious", "Strategic", "SIRRUSH"],
+              autoStart: true,
+
+              loop: true,
+              delay: 200,
+              deleteSpeed: 75,
+              cursor: "|",
+            }}
+          />
+        </motion.div>
+
+        {/* Tags */}
+        <motion.div
+          initial={{ opacity: 0, x: -10 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.6 }}
+          className="flex items-center gap-2 text-lg font-bold text-ant-gold"
+        >
+          <span>{"<"}</span>
+          <span className="text-deep-navy">/</span>
+          <span>Safe</span>
+          <span>{">"}</span>
+        </motion.div>
+      </motion.div>
+
+      {/* المحتوى */}
+      <motion.div
+        variants={itemVariants}
+  initial="hidden"
+  animate="show"
+      className="absolute z-20 container-lg inset-0 flex flex-col items-center justify-center text-center px-4 pt-4">
+        <motion.h1         variants={itemVariants}
+  initial="hidden"
+  animate="show" className="text-xl md:text-3xl font-bold text-deep-navy mb-4 max-w-[80%]">
+          With passion and ambition, we guide your business toward greater
+          successes and new horizons that meet your aspirations.
+        </motion.h1>
+
+        <motion.p         variants={itemVariants}
+  initial="hidden"
+  animate="show" className="text-lg md:text-xl font-medium text-deep-navy mb-8 max-w-[70%]">
+          We always strive to delight our customers by providing the widest
+          possible range of digital options.
+        </motion.p>
+
+<div className="flex gap-4">
+  {/* Primary Button */}
+  <button className="relative px-6 py-3 bg-deep-navy text-ant-gold text-sm font-bold rounded-full overflow-hidden group transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl hover:shadow-ant-gold/30 active:scale-95">
+    
+    {/* Shine */}
+    <span className="absolute inset-0 overflow-hidden rounded-full">
+      <span className="absolute left-[-100%] top-0 h-full w-[200%] bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-[-25deg] transition-all duration-700 group-hover:left-[100%]" />
+    </span>
+
+    {/* Glow */}
+    <span className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition duration-300 bg-ant-gold/10 blur-md" />
+
+    <span className="relative z-10">Free Consulting</span>
+  </button>
+
+  {/* Secondary Button */}
+  <button className="relative px-6 py-3 bg-transparent border border-deep-navy text-deep-navy text-sm font-bold rounded-full overflow-hidden group transition-all duration-300 ease-out hover:-translate-y-1 hover:bg-deep-navy hover:text-ant-gold hover:shadow-lg hover:shadow-deep-navy/30 active:scale-95">
+    
+    {/* Shine */}
+    <span className="absolute inset-0 overflow-hidden rounded-full">
+      <span className="absolute left-[-100%] top-0 h-full w-[200%] bg-gradient-to-r from-transparent via-ant-gold/30 to-transparent skew-x-[-25deg] transition-all duration-700 group-hover:left-[100%]" />
+    </span>
+
+    <span className="relative z-10">Learn More</span>
+  </button>
+</div>
+      </motion.div>
+    </motion.section>
   );
 }

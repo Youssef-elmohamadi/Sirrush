@@ -1,0 +1,25 @@
+{
+    "currency":"ج.م",
+    "english":"الانجليزية",
+    "arabic":"العربية",
+    "TopBar":{
+        "contact_number":"رقم تواصل مباشر"
+    },
+    "header": {
+    "search_placeholder": "ابحث عن منتجات، فئات...",
+    "hello": "أهلاً",
+    "account": "حسابي"
+  },
+  "navbar": {
+    "all_categories": "جميع الفئات",
+    "saving_bundles": "وفر مع الباقات",
+    "offers": "عروض",
+    "large_appliances": "أجهزة كبيرة",
+    "home_furniture": "أثاث منزلي",
+    "hood": "شفاطات",
+    "doors": "أبواب",
+    "new": "جديد",
+    "cart_items": "{count} منتج",
+    "currency": "ج.م"
+  }
+}
