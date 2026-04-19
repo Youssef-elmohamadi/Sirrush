@@ -8,7 +8,6 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // إذا نزل المستخدم أكثر من 20 بكسل، نعتبره بدأ السكرول
       setIsScrolled(window.scrollY > 30);
     };
 
@@ -18,7 +17,6 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 w-full shadow-sm">
-      {/* الـ Topbar بلمسة بسيطة وسلسة */}
       <div
         className={`
           overflow-hidden transition-all duration-500 ease-in-out bg-royal-gold
@@ -27,8 +25,6 @@ const Header = () => {
       >
         <Topbar />
       </div>
-
-      {/* الـ Nav دائم الظهور */}
       <div className="bg-white">
         <Nav />
       </div>

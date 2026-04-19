@@ -41,7 +41,6 @@ const MobileMenu = ({ isOpen, toggleMenu, navLinks }) => {
             transition={{ type: "spring", damping: 25, stiffness: 200 }}
             className="fixed inset-s-0 top-0 bottom-0 w-full bg-white z-99999 md:hidden flex flex-col p-6 pt-0 shadow-2xl"
           >
-            {/* الهيدر داخل المنيو (Logo & Close) */}
             <div className="flex justify-between items-center ">
               <Link
                 href="/"
@@ -63,8 +62,6 @@ const MobileMenu = ({ isOpen, toggleMenu, navLinks }) => {
                 <IoClose size={35} />
               </button>
             </div>
-
-            {/* الروابط مع الخطوط الفاصلة */}
             <nav className="flex flex-col bg-white">
               {navLinks.map((link) => (
                 <Link
@@ -77,10 +74,7 @@ const MobileMenu = ({ isOpen, toggleMenu, navLinks }) => {
                 </Link>
               ))}
             </nav>
-
-            {/* القسم السفلي (العلم، السوشيال، والزراير) */}
             <div className="mt-auto flex flex-col gap-6">
-              {/* علم السعودية / اللغة */}
               <div className="flex items-center gap-2">
                 <span className="text-xl">🇸🇦</span>
               </div>
@@ -140,10 +134,7 @@ const MobileMenu = ({ isOpen, toggleMenu, navLinks }) => {
                   </div>
                 </Link>
               </div>
-
-              {/* أزرار التواصل */}
               <div className="flex flex-col gap-3 pb-4">
-                {/* زر واتساب */}
                 <button className="w-full py-3 bg-[#8E67E8] text-white rounded-2xl flex items-center justify-center gap-3 font-bold shadow-lg shadow-purple-200">
                   <div className="bg-white p-1 rounded-full">
                     <FaWhatsapp className="text-[#25D366]" size={20} />
@@ -151,7 +142,6 @@ const MobileMenu = ({ isOpen, toggleMenu, navLinks }) => {
                   Contact us now
                 </button>
 
-                {/* زر استشارة مجانية */}
                 <button className="w-full py-3 bg-[#a17ced] text-white rounded-2xl font-bold">
                   استشارة مجانية
                 </button>

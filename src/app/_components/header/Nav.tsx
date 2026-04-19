@@ -1,9 +1,9 @@
 "use client";
-import { useState } from "react"; // ضيف الـ state
+import { useState } from "react"; 
 import Image from "next/image";
 import Link from "next/link";
 import NavLink from "./NavLinks";
-import MobileMenu from "./MobileMenu"; // استيراد الكمبوننت الجديد
+import MobileMenu from "./MobileMenu";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Nav = () => {
@@ -71,7 +71,7 @@ const Nav = () => {
           {/* Hamburger Menu Toggle */}
           <button
             onClick={toggleMenu}
-            className="md:hidden p-2 rounded-md text-deep-navy hover:bg-gray-200 transition-colors"
+            className="md:hidden p-2 rounded-md text-dark-navy hover:bg-gray-200 transition-colors"
           >
             <GiHamburgerMenu size={30} />
           </button>

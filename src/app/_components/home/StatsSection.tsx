@@ -33,10 +33,9 @@ const stats = [
 ];
 
 const StatsSection = () => {
-  // استخدام الـ Observer لمراقبة السيكشن
   const { ref, inView } = useInView({
-    triggerOnce: true, // العد يحصل مرة واحدة بس
-    threshold: 0.3,    // يبدأ لما يظهر 30% من السيكشن
+    triggerOnce: true,
+    threshold: 0.3,
   });
 
   return (
@@ -51,12 +50,9 @@ const StatsSection = () => {
               transition={{ delay: index * 0.1 }}
               className="flex flex-col items-center text-center group"
             >
-              {/* أيقونة دائرية بتأثير SIRRUSH */}
               <div className="w-20 h-20 rounded-full border border-ant-gold flex items-center justify-center text-3xl text-dark-navy mb-6 transition-all duration-300 group-hover:bg-ant-gold group-hover:text-white group-hover:scale-110">
                 {stat.icon}
               </div>
-
-              {/* الرقم مع العداد */}
               <h3 className="text-2xl md:text-3xl font-black text-dark-navy mb-2">
                 {inView ? (
                   <CountUp end={stat.number} duration={2.5} />
@@ -65,8 +61,6 @@ const StatsSection = () => {
                 )}
                 <span className="text-ant-gold ml-1">+</span>
               </h3>
-
-              {/* الوصف */}
               <p className="text-dark-navy max-w-[180px]  leading-snug uppercase text-sm font-bold tracking-wide">
                 {stat.label}
               </p>
