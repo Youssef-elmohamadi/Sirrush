@@ -9,7 +9,7 @@ import { MdEmail } from "react-icons/md";
 
 const Topbar = () => {
   return (
-    <div className="  bg-deep-navy">
+    <div className=" hidden md:block  bg-deep-navy">
       <div className="container-lg py-2 flex items-center justify-between">
         <div className="flex items-center gap-6">
           <Link

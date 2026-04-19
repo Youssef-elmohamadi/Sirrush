@@ -1,24 +1,38 @@
 "use client";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { useState, useEffect } from "react";
 import Topbar from "./Topbar";
 import Nav from "./Nav";
 
 const Header = () => {
-  const { scrollY } = useScroll();
-  const topbarHeight = useTransform(scrollY, [0, 50], ["auto", "0px"]);
-  const opacity = useTransform(scrollY, [0, 50], [1, 0]);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // إذا نزل المستخدم أكثر من 20 بكسل، نعتبره بدأ السكرول
+      setIsScrolled(window.scrollY > 30);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <div className="sticky top-0 z-50">
-      <motion.div
-        style={{ height: topbarHeight, opacity: opacity }}
-        className="overflow-hidden bg-royal-gold"
+    <header className="sticky top-0 z-50 w-full shadow-sm">
+      {/* الـ Topbar بلمسة بسيطة وسلسة */}
+      <div
+        className={`
+          overflow-hidden transition-all duration-500 ease-in-out bg-royal-gold
+          ${isScrolled ? "max-h-0 opacity-0" : "max-h-20 opacity-100"}
+        `}
       >
         <Topbar />
-      </motion.div>
+      </div>
 
-      <Nav />
-    </div>
+      {/* الـ Nav دائم الظهور */}
+      <div className="bg-white">
+        <Nav />
+      </div>
+    </header>
   );
 };
 

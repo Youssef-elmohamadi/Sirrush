@@ -12,7 +12,7 @@ const NavLink = ({ href, children }) => {
       <Link
         href={href}
         className={`
-          relative block px-5 py-3 text-[16px] font-medium transition-all duration-300
+          relative block px-3 py-3 md:text-[15px] lg:text-[16px] font-medium transition-all duration-300
           ${
             isActive
               ? "text-ant-gold bg-deep-navy shadow-lg"
