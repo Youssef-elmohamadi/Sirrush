@@ -17,23 +17,18 @@ const Hero = () => {
     show: { opacity: 1, y: 0 },
   };
   return (
-      <motion.section
-        initial={{ opacity: 0, scale: 1 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
+      <section
         className="relative h-[600px] flex items-center justify-center overflow-hidden"
       >
-        {/* الصورة */}
 <picture>
-  {/* الموبايل */}
   <source media="(max-width: 768px)" srcSet="/hero-mobile.webp"  />
-  {/* الديسكتوب */}
   <source media="(min-width: 769px)" srcSet="/hero.webp" />
   
   <Image
-    src="/hero.webp" /* الـ Fallback */
+    src="/hero.webp" 
     alt="Landing Background"
     fill
+    sizes=""
     className="object-cover object-center"
     priority
   />
@@ -121,7 +116,7 @@ const Hero = () => {
             </button>
           </div>
         </motion.div>
-      </motion.section>
+      </section>
   )
 }
 

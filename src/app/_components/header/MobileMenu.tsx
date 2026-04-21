@@ -12,8 +12,8 @@ import {
 import { useEffect } from "react";
 
 const MobileMenu = ({ isOpen, toggleMenu, navLinks }) => {
-    const dir="rtl";
-    useEffect(() => {
+  const dir = "rtl";
+  useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
     } else {
@@ -68,16 +68,28 @@ const MobileMenu = ({ isOpen, toggleMenu, navLinks }) => {
                   key={link.href}
                   href={link.href}
                   onClick={toggleMenu}
-                  className="py-3 text-lg font-semibold text-deep-navy hover:text-royal-gold border-b border-gray-100 transition-colors"
+                  className="py-3 text-lg font-semibold text-deep-navy hover:text-ant-gold border-b border-gray-100 transition-colors"
                 >
                   {link.name}
                 </Link>
               ))}
             </nav>
             <div className="mt-auto flex flex-col gap-6">
-              <div className="flex items-center gap-2">
-                <span className="text-xl">🇸🇦</span>
-              </div>
+<div className="flex items-center justify-center">
+  <button className="flex items-center gap-2 px-4 py-2 border border-deep-navy text-ant-gold text-xs font-bold rounded-full hover:bg-ant-gold/10 transition-all duration-300 group">
+    
+    {/* حاوية اللمبة الخضراء */}
+    <span className="relative flex h-2 w-2">
+      {/* تأثير الهالة المنتشرة (Ping) - اختياري لشكل أكثر ديناميكية */}
+      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-saudi-green opacity-75"></span>
+      
+      {/* اللمبة الأساسية التي تعمل وميض (Pulse) */}
+      <span className="relative inline-flex rounded-full h-2 w-2 bg-saudi-green animate-pulse"></span>
+    </span>
+
+    العربية
+  </button>
+</div>
 
               <div className="flex items-center justify-center gap-3">
                 <Link
@@ -135,15 +147,25 @@ const MobileMenu = ({ isOpen, toggleMenu, navLinks }) => {
                 </Link>
               </div>
               <div className="flex flex-col gap-3 pb-4">
-                <button className="w-full py-3 bg-[#8E67E8] text-white rounded-2xl flex items-center justify-center gap-3 font-bold shadow-lg shadow-purple-200">
+                <button className="relative px-6 py-3 bg-deep-navy text-ant-gold text-sm font-bold rounded-full overflow-hidden group transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl hover:shadow-ant-gold/30 active:scale-95 cursor-pointer flex items-center justify-center gap-3">
                   <div className="bg-white p-1 rounded-full">
                     <FaWhatsapp className="text-[#25D366]" size={20} />
                   </div>
-                  Contact us now
+                  <span className="absolute inset-0 overflow-hidden rounded-full">
+                    <span className="absolute left-[-100%] top-0 h-full w-[200%] bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-[-25deg] transition-all duration-700 group-hover:left-[100%]" />
+                  </span>
+                  <span className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition duration-300 bg-ant-gold/10 blur-md" />
+
+                  <span className="relative z-10">Contact US</span>
                 </button>
 
-                <button className="w-full py-3 bg-[#a17ced] text-white rounded-2xl font-bold">
-                  استشارة مجانية
+                <button className="relative px-6 py-3 bg-deep-navy text-ant-gold text-sm font-bold rounded-full overflow-hidden group transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl hover:shadow-ant-gold/30 active:scale-95 cursor-pointer">
+                  <span className="absolute inset-0 overflow-hidden rounded-full">
+                    <span className="absolute left-[-100%] top-0 h-full w-[200%] bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-[-25deg] transition-all duration-700 group-hover:left-[100%]" />
+                  </span>
+                  <span className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition duration-300 bg-ant-gold/10 blur-md" />
+
+                  <span className="relative z-10">Free Consulting</span>
                 </button>
               </div>
             </div>
