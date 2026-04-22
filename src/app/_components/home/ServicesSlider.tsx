@@ -40,7 +40,6 @@ const services = [
 ];
 
 const ServicesSlider = () => {
-  // مضاعفة البيانات لضمان عمل الـ Loop بسلاسة في الشاشات الكبيرة
   const displayServices = [...services, ...services];
 
   return (
@@ -79,19 +78,15 @@ const ServicesSlider = () => {
               1024: { slidesPerView: 3 },
               1280: { slidesPerView: 4 },
             }}
-            className="pb-16 !overflow-visible" // لجعل الأيقونات العلوية تظهر بوضوح
+            className="pb-16 !overflow-visible"
           >
             {displayServices.map((service, index) => (
               <SwiperSlide key={index} className="h-auto">
-                {/* Card - تم تثبيت الارتفاع باستخدام h-full و min-h */}
                 <div className="group relative mt-10 h-full min-h-[350px] bg-pure-white border border-soft-gray/20 rounded-[30px] p-8 pt-16 text-center flex flex-col transition-all duration-500 hover:border-ant-gold hover:shadow-2xl hover:shadow-ant-gold/10">
                   
-                  {/* Icon Circle */}
                   <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-20 h-20 bg-deep-navy rounded-full flex items-center justify-center text-3xl text-ant-gold border-4 border-pure-white transition-all duration-500 group-hover:bg-ant-gold group-hover:text-deep-navy group-hover:scale-110 shadow-lg">
                     {service.icon}
                   </div>
-
-                  {/* Content Area */}
                   <div className="flex-grow">
                     <h3 className="text-xl font-bold text-deep-navy mb-4 group-hover:text-ant-gold transition-colors duration-300">
                         {service.title}
@@ -111,7 +106,6 @@ const ServicesSlider = () => {
             ))}
           </Swiper>
 
-          {/* Custom Navigation Buttons */}
           <button className="button-prev absolute left-0 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-deep-navy text-pure-white flex items-center justify-center text-2xl transition-all hover:bg-ant-gold hover:text-deep-navy shadow-xl cursor-pointer">
             <FiChevronLeft />
           </button>
