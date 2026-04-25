@@ -2,9 +2,9 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
-import { 
-  FiCode, FiLayout, FiMonitor, FiSmartphone, 
-  FiChevronLeft, FiChevronRight, FiArrowRight 
+import {
+  FiCode, FiLayout, FiMonitor, FiSmartphone,
+  FiChevronLeft, FiChevronRight, FiArrowRight
 } from "react-icons/fi";
 
 // استيراد ستايلات Swiper
@@ -45,7 +45,7 @@ const ServicesSlider = () => {
   return (
     <section className="py-24 container-lg bg-white relative overflow-hidden">
       <div className=" relative">
-        
+
         {/* Header */}
         <div className="flex flex-col items-center text-center mb-16">
           <div className="flex items-center gap-2 mb-4">
@@ -69,9 +69,9 @@ const ServicesSlider = () => {
               nextEl: ".button-next",
               prevEl: ".button-prev",
             }}
-            autoplay={{ 
-                delay: 4000,
-                disableOnInteraction: false 
+            autoplay={{
+              delay: 4000,
+              disableOnInteraction: false
             }}
             breakpoints={{
               640: { slidesPerView: 2 },
@@ -83,17 +83,17 @@ const ServicesSlider = () => {
             {displayServices.map((service, index) => (
               <SwiperSlide key={index} className="h-auto">
                 <div className="group relative mt-10 h-full min-h-[350px] bg-pure-white border border-soft-gray/20 rounded-[30px] p-8 pt-16 text-center flex flex-col transition-all duration-500 hover:border-ant-gold hover:shadow-2xl hover:shadow-ant-gold/10">
-                  
+
                   <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-20 h-20 bg-deep-navy rounded-full flex items-center justify-center text-3xl text-ant-gold border-4 border-pure-white transition-all duration-500 group-hover:bg-ant-gold group-hover:text-deep-navy group-hover:scale-110 shadow-lg">
                     {service.icon}
                   </div>
                   <div className="flex-grow">
                     <h3 className="text-xl font-bold text-deep-navy mb-4 group-hover:text-ant-gold transition-colors duration-300">
-                        {service.title}
+                      {service.title}
                     </h3>
-                    
+
                     <p className="text-soft-gray text-sm leading-relaxed mb-8 opacity-80 group-hover:opacity-100">
-                        {service.desc}
+                      {service.desc}
                     </p>
                   </div>
 

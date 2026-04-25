@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import Header from "./_components/header/Header";
+import Footer from "./_components/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +19,8 @@ export default function RootLayout({
       <NextIntlClientProvider>
         <body className="min-h-full flex flex-col">
           <Header />
-          {children}
+          <main className="flex-grow">{children}</main>
+          <Footer />
         </body>
       </NextIntlClientProvider>
     </html>
