@@ -1,7 +1,15 @@
 import {getRequestConfig} from 'next-intl/server';
 import {routing} from './routing';
 const common ="common"
-const namespaces = ['init'];
+const namespaces = ['init', 'nav', 'home', 'footer', 'about', 'services_page', 'projects_page', 'team_page', 'blog_page', 'contact_page'];
+
+
+
+
+
+
+
+
 export default getRequestConfig(async ({requestLocale}) => {
   let locale = await requestLocale;
   if (!locale || !routing.locales.includes(locale as any)) {

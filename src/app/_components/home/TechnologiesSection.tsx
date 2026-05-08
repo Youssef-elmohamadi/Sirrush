@@ -15,6 +15,7 @@ import {
   SiPhp,
   SiJavascript,
 } from "react-icons/si";
+import { useTranslations, useLocale } from "next-intl";
 
 const technologies = [
   { name: "Laravel", icon: <FaLaravel />, color: "#FF2D20" },
@@ -33,6 +34,8 @@ const technologies = [
 ];
 
 const TechnologiesSection = () => {
+  const t = useTranslations("home.technologies");
+  const locale = useLocale();
   const duplicatedTechs = [...technologies, ...technologies];
 
   return (
@@ -41,26 +44,30 @@ const TechnologiesSection = () => {
         {/* Header Section */}
         <div className="flex flex-col items-center text-center mb-16">
           <div className="flex items-center gap-3 mb-6 relative">
-             <span className="w-4 h-4 bg-ant-gold rounded-full shadow-[0_0_15px_rgba(186,149,84,0.6)]"></span>
-             <div className="relative">
-                {/* Brush stroke effect */}
-                <div className="absolute -inset-x-4 -inset-y-1 bg-ant-gold/10 skew-x-[-15deg] rounded-lg -z-10"></div>
-                <h2 className="text-3xl md:text-4xl font-black text-dark-navy tracking-tight">
-                  Technologies
-                </h2>
-             </div>
+            <span className="w-4 h-4 bg-ant-gold rounded-full shadow-[0_0_15px_rgba(186,149,84,0.6)] animate-pulse"></span>
+            <div className="relative">
+              {/* Brush stroke effect */}
+              <div className="absolute -inset-x-4 -inset-y-1 bg-ant-gold/10 skew-x-[-15deg] rounded-lg -z-10"></div>
+              <h2 className="text-3xl md:text-4xl font-black text-dark-navy tracking-tight">
+                {t("title")}
+              </h2>
+            </div>
           </div>
           <p className="text-soft-gray text-lg md:text-xl font-medium max-w-3xl leading-relaxed">
-            We work with the best technologies that keep pace with the rapid
-            development of the labor market.
+            {t("subtitle")}
           </p>
         </div>
 
         {/* Marquee Section */}
-        <div className="relative flex overflow-hidden py-12 mask-fade">
+        <div className="relative flex overflow-hidden py-12">
+          {/* Gradient Overlays for masking */}
+          <div className="absolute inset-y-0 left-0 w-24 md:w-40 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute inset-y-0 right-0 w-24 md:w-40 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+          
+
           <motion.div
             className="flex flex-nowrap shrink-0 gap-12 md:gap-20 items-center"
-            animate={{ x: ["0%", "-50%"] }}
+            animate={{ x: locale === "ar" ? ["0%", "50%"] : ["0%", "-50%"] }}
             transition={{
               duration: 35,
               ease: "linear",
@@ -72,15 +79,16 @@ const TechnologiesSection = () => {
                 key={index}
                 className="flex flex-col items-center gap-4 group cursor-default transition-all duration-300"
               >
-                <div 
-                   className="text-5xl md:text-6xl text-soft-gray/40 transition-all duration-500 group-hover:scale-110 group-hover:opacity-100"
-                   style={{ color: `var(--tech-color, ${tech.color})` }}
+                <div
+                  className="text-5xl md:text-6xl text-soft-gray/40 transition-all duration-500 group-hover:scale-110 group-hover:opacity-100"
+                  style={{ color: `var(--tech-color, ${tech.color})` }}
                 >
-                   <div className="grayscale group-hover:grayscale-0 transition-all duration-500">
+                  <div className="grayscale group-hover:grayscale-0 transition-all duration-500">
                     {tech.icon}
-                   </div>
+                  </div>
+
                 </div>
-                <span className="text-xs font-bold uppercase tracking-widest text-soft-gray opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <span className="text-sm font-bold uppercase tracking-wide text-soft-gray opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   {tech.name}
                 </span>
               </div>
@@ -89,19 +97,10 @@ const TechnologiesSection = () => {
         </div>
       </div>
 
-      <style jsx>{`
-        .mask-fade {
-          mask-image: linear-gradient(
-            to right,
-            transparent,
-            black 15%,
-            black 85%,
-            transparent
-          );
-        }
-      `}</style>
     </section>
   );
 };
 
+
 export default TechnologiesSection;
+

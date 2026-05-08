@@ -1,0 +1,47 @@
+{
+  "hero": {
+    "title": "About Us",
+    "subtitle": "Sirrush is your trusted partner in the digital world.",
+    "breadcrumb_home": "Home",
+    "breadcrumb_about": "About"
+  },
+  "intro": {
+    "label": "About us",
+    "title": "<span>Sirrush</span> is your partner in the world of technology.",
+    "description": "Specialized in providing programming and e-marketing services. Since we started, we have been committed to providing innovative technological solutions that meet the needs of our customers efficiently and professionally. Our team consists of experts in providing programming and e-marketing services. We are committed to providing the highest levels of quality and innovation in every project we undertake.",
+    "contact_us": "Contact us"
+  },
+  "pillars": {
+    "vision": {
+      "title": "Our Vision",
+      "description": "We seek to be the leading company in the fields of programming and electronic marketing, distinguished by creativity and innovation in providing digital solutions."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "We aim to provide innovative software solutions, guaranteed protection and strategic marketing services that contribute to the success of our clients."
+    },
+    "message": {
+      "title": "Our Message",
+      "description": "We are here to support our clients in achieving their goals by providing the highest quality programming and e-marketing services, with a focus on interaction and innovation."
+    }
+  },
+  "benefits": {
+    "label": "With Sirrush You Will Get",
+    "partner": {
+      "title": "A Reliable Partner",
+      "description": "We provide you with our services with high efficiency, and we are keen to build strong relationships with our customers."
+    },
+    "solutions": {
+      "title": "Creative Solutions",
+      "description": "We provide you with creative solutions that meet your needs and achieve your goals."
+    },
+    "results": {
+      "title": "Effective Results",
+      "description": "We provide you with high quality services that help you achieve success on the Internet. Guaranteed protection & Fast technical support."
+    }
+  },
+  "culture": {
+    "label": "Our culture aspiration",
+    "description": "We want everyone at Sirrush to feel inspired by our purpose to create innovative solutions and feel empowered everyday to do their best, to achieve their personal and professional goals, and live to our values and behaviors. We need leaders who serve their teams, enabling them to reach their full potential, take smart risks, and learn from failure. We need associates to be compassionate to one another, be inclusive of complex viewpoints, and provide each other with direct and honest feedback."
+  }
+}

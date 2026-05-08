@@ -1,0 +1,127 @@
+{
+  "hero": {
+    "typewriter": ["Creative", "Ambitious", "Strategic", "SIRRUSH"],
+    "tag": "Safe",
+    "title": "With passion and ambition, we guide your business toward greater successes and new horizons that meet your aspirations.",
+    "subtitle": "We always strive to delight our customers by providing the widest possible range of digital options.",
+    "free_consulting": "Free Consulting",
+    "learn_more": "Learn More"
+  },
+  "stats": {
+    "projects": "Complete Projects",
+    "clients": "Happy Clients",
+    "team": "Team Members",
+    "experience": "Years of Experience"
+  },
+  "features": {
+    "title": "Why Choose Us",
+    "subtitle": "We excel in providing high-quality digital solutions that set your business apart from the competition.",
+    "items": {
+      "client_centric": {
+        "title": "Client-Centric Approach",
+        "description": "Your needs are our priority. We understand that every project is unique and tailor our solutions accordingly."
+      },
+      "transparent": {
+        "title": "Transparent Process",
+        "description": "We involve you in every stage, keeping you constantly informed of the progress through transparent communication."
+      },
+      "support": {
+        "title": "Continuous Support",
+        "description": "We provide comprehensive technical support after delivery, ensuring ease of use and maximum security."
+      },
+      "training": {
+        "title": "Empowerment & Training",
+        "description": "We offer free training on our platforms to ensure you get the most out of our digital services."
+      },
+      "consulting": {
+        "title": "Strategic Consulting",
+        "description": "Our marketing and electronic consultations help you achieve your business goals efficiently and effectively."
+      },
+      "commitment": {
+        "title": "Long-term Commitment",
+        "description": "Our relationship doesn't end at delivery. We're always ready to assist and support your future growth."
+      },
+      "reliability": {
+        "title": "Reliability & Trust",
+        "description": "We respect contract terms, prioritize your privacy, and guarantee on-time delivery for every project."
+      },
+      "technology": {
+        "title": "Modern Technologies",
+        "description": "We use the latest scalable languages and methods, ensuring your project stays future-proof and robust."
+      }
+    }
+  },
+  "expertise": {
+    "title": "Our Markets and Expertise",
+    "subtitle": "We have worked with a wide range of sectors.",
+    "description": "From healthcare, education, contracting and engineering offices to e-commerce and financial services, every project we undertake benefits from our extensive knowledge of various industries and our ability to provide solutions tailored to meet unique needs.",
+    "start_now": "Start Now"
+  },
+  "services": {
+    "title": "The most important services in <span>Sirrush</span>",
+    "subtitle": "Comprehensive digital services designed to scale your business and enhance your technological footprint.",
+    "show_more": "Show More",
+    "items": {
+      "software": {
+        "title": "Software Development",
+        "description": "Our software development ensures you have smart and secure solutions that meet your company’s needs, while improving performance."
+      },
+      "ui_ux": {
+        "title": "UI & UX Development",
+        "description": "We develop user experiences and interfaces that make it easy for your customers to interact with your products in the most convenient way."
+      },
+      "web": {
+        "title": "Web Development",
+        "description": "We provide professional and fast website development solutions that help improve user experience and enhance your online presence."
+      },
+      "mobile": {
+        "title": "Mobile Development",
+        "description": "We develop mobile applications that provide high performance and a seamless user experience, meeting the needs of customers."
+      },
+      "custom": {
+        "title": "Custom Solutions",
+        "description": "Tailored digital products designed specifically to solve your unique business challenges with cutting-edge technology."
+      }
+    }
+  },
+  "technologies": {
+    "title": "Technologies",
+    "subtitle": "We work with the best technologies that keep pace with the rapid development of the labor market."
+  },
+  "partners": {
+    "label": "Our Partners",
+    "title": "Join our clients to create a new success story<span>.</span>"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "Discover how we help our clients achieve digital success through innovative design and robust technology.",
+    "label": "Built with Excellence",
+    "view_full": "View Full Project",
+    "items": {
+      "aljoodmed": {
+        "name": "Aljoodmed",
+        "tagline": "Medical Management System",
+        "description": "Aljoodmed is a healthcare-focused digital project created to present medical services in a clear, professional, and user-friendly way. The project helps strengthen online presence and build greater trust with patients and visitors."
+      }
+    }
+  },
+
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Do not hesitate to make your dreams a tangible reality..we are waiting for you",
+    "info": {
+      "phone": "Phone",
+      "address": "Address",
+      "email": "Email",
+      "address_value": "New Cairo, Egypt"
+    },
+
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "write your message here ...",
+      "whatsapp": "Contact us now",
+      "send": "Send"
+    }
+  }
+}

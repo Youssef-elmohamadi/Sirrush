@@ -1,0 +1,98 @@
+{
+  "hero": {
+    "title": "Services",
+    "subtitle": "Every thought in your mind finds its way with Sirrush to become a real reality.",
+    "breadcrumb_home": "Home",
+    "breadcrumb_services": "Services"
+  },
+  "list": {
+    "label": "Our Services",
+    "title": "The most important services in <span>Sirrush</span>",
+    "show_more": "Show More",
+    "items": {
+      "software": {
+        "title": "Software Development",
+        "description": "Our software development ensures you have smart and secure solutions that meet your company's needs, while improving performance and operational efficiency."
+      },
+      "ui_ux": {
+        "title": "UI & UX Development",
+        "description": "We develop user experiences and interfaces that make it easy for your customers to interact with your products in the most convenient and effective way."
+      },
+      "web": {
+        "title": "Web Development",
+        "description": "We provide professional and fast website development solutions that help improve user experience and enhance your company's online presence."
+      },
+      "mobile": {
+        "title": "Mobile Development",
+        "description": "We develop mobile applications that provide high performance and a seamless user experience, meeting the needs of customers wherever they are."
+      },
+      "ecommerce": {
+        "title": "E-Commerce",
+        "description": "Our e-commerce website design focuses on improving the shopping experience and increasing conversion rates to achieve success."
+      },
+      "marketing": {
+        "title": "Performance Marketing",
+        "description": "We provide performance-based marketing strategies to ensure the best results and increase your business ROI."
+      },
+      "design": {
+        "title": "Graphic Design",
+        "description": "We provide graphic designs that enhance your brand identity and leave an impression on your audience through professional visuals."
+      },
+      "branding": {
+        "title": "Branding",
+        "description": "Our brand building focuses on distinguishing your identity and achieving sustainable engagement with your target audience."
+      },
+      "media_buying": {
+        "title": "Media Buying",
+        "description": "We provide media buying solutions that ensure optimal reach to your target audience at the best value and with the highest efficiency."
+      },
+      "social_media": {
+        "title": "Social Media Management",
+        "description": "We effectively manage social media accounts to enhance your brand presence and increase engagement with your audience."
+      },
+      "seo": {
+        "title": "SEO",
+        "description": "Our SEO aims to increase your digital visibility and attract more interested visitors to your site."
+      },
+      "content": {
+        "title": "Content Creation",
+        "description": "We provide innovative content creation services that enhance your message and engage your audience in an engaging and inspiring way."
+      }
+    }
+  },
+  "process": {
+    "label": "How we work",
+    "title": "Steps to create our projects",
+    "steps": [
+      {
+        "title": "Planning",
+        "description": "Define goals, analyze target audience, and create a site map."
+      },
+      {
+        "title": "Interface design",
+        "description": "Choosing a visual design and user interface that aligns with your brand goals."
+      },
+      {
+        "title": "Software development",
+        "description": "Building software infrastructure and developing core functionality."
+      },
+      {
+        "title": "Enter content",
+        "description": "Add text and media content, such as images and video."
+      },
+      {
+        "title": "Testing",
+        "description": "Testing for errors and technical issues and ensuring the site is compatible with different browsers and devices."
+      },
+      {
+        "title": "Launch",
+        "description": "The website is officially published on the Internet."
+      },
+      {
+        "title": "Maintenance",
+        "description": "To update and follow up on the site's performance."
+      }
+    ]
+  },
+  "order_now": "Order Service Now"
+}

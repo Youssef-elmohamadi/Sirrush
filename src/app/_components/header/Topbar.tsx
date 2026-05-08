@@ -28,6 +28,7 @@ const Topbar = () => {
               />
             </div>
             <span
+              dir="ltr"
               className="text-sm text-ant-gold font-bold 
                      transition-colors duration-300 ease-in-out "
             >
@@ -78,7 +79,7 @@ const Topbar = () => {
 
           {/* Instagram */}
           <Link
-            href="https://www.facebook.com/profile.php?id=61574370509901"
+            href="https://www.instagram.com/sirrushsolutions?igsh=bjVtZHRieDNoMHk2"
             target="_blank"
             className="group"
           >
@@ -95,7 +96,7 @@ const Topbar = () => {
             </div>
           </Link>
           <Link
-            href="https://www.facebook.com/profile.php?id=61574370509901"
+            href="https://www.linkedin.com"
             target="_blank"
             className="group"
           >

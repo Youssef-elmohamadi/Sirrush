@@ -2,8 +2,13 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useTranslations, useLocale } from "next-intl";
 
 const ExpertiseSection = () => {
+  const t = useTranslations("home.expertise");
+  const locale = useLocale();
+
+
   return (
     <section className="py-24 bg-white overflow-hidden">
       <div className="container-lg">
@@ -11,28 +16,29 @@ const ExpertiseSection = () => {
           {/* Left Content */}
           <div className="flex-1 space-y-8">
             <motion.div
-              initial={{ opacity: 0, x: -50 }}
+              initial={{ opacity: 0, x: locale === "ar" ? 50 : -50 }}
+
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
               className="space-y-6"
             >
-              <div className="flex items-center gap-3">
-                <span className="w-4 h-4 bg-ant-gold rounded-full shadow-[0_0_15px_rgba(186,149,84,0.6)]"></span>
-                <h2 className="text-3xl md:text-4xl font-black text-dark-navy tracking-tight">
-                  Our Markets and Expertise
-                </h2>
+              <div className="flex items-center gap-3 relative">
+                <span className="w-4 h-4 bg-ant-gold rounded-full shadow-[0_0_15px_rgba(186,149,84,0.6)] animate-pulse"></span>
+                <div className="relative">
+                  <div className="absolute -inset-x-4 -inset-y-1 bg-ant-gold/10 skew-x-[-15deg] rounded-lg -z-10"></div>
+                  <h2 className="text-3xl md:text-4xl font-black text-dark-navy tracking-tight">
+                    {t("title")}
+                  </h2>
+                </div>
               </div>
 
               <h3 className="text-2xl md:text-3xl font-bold text-dark-navy leading-tight">
-                We have worked with a wide range of sectors.
+                {t("subtitle")}
               </h3>
 
-              <p className="text-soft-gray text-lg leading-relaxed max-w-xl">
-                From healthcare, education, contracting and engineering offices
-                to e-commerce and financial services, every project we undertake
-                benefits from our extensive knowledge of various industries and
-                our ability to provide solutions tailored to meet unique needs.
+              <p className="text-soft-gray text-lg md:text-xl font-medium max-w-3xl leading-relaxed">
+                {t("description")}
               </p>
 
               <motion.button
@@ -40,7 +46,7 @@ const ExpertiseSection = () => {
                 whileTap={{ scale: 0.95 }}
                 className="px-10 py-4 bg-gradient-to-r from-ant-gold to-[#a48446] text-white font-black rounded-2xl shadow-xl shadow-ant-gold/20 hover:shadow-ant-gold/40 transition-all duration-300"
               >
-                Start Now
+                {t("start_now")}
               </motion.button>
             </motion.div>
           </div>
@@ -88,3 +94,4 @@ const ExpertiseSection = () => {
 };
 
 export default ExpertiseSection;
+

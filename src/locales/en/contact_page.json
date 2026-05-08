@@ -1,0 +1,22 @@
+{
+  "hero": {
+    "title": "Contact Us",
+    "subtitle": "We are here to help you turn your vision into reality. Reach out to us for any inquiries or collaborations.",
+    "breadcrumb_home": "Home",
+    "breadcrumb_contact": "Contact Us"
+  },
+  "info": {
+    "label": "Contact Us",
+    "title": "Do not hesitate to make your dreams a tangible reality..we are waiting for you",
+    "email": "info@sirrush.com",
+    "phone": "+966 50 005 9187",
+    "address": "New Cairo, Egypt"
+  },
+  "form": {
+    "name_label": "Name",
+    "email_label": "Email",
+    "phone_label": "Phone Number",
+    "message_label": "Write your message here...",
+    "send_btn": "Send"
+  }
+}

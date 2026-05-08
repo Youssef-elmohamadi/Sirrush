@@ -11,67 +11,70 @@ import {
   FiFileText,
   FiCode,
 } from "react-icons/fi";
-
-const features = [
-  {
-    icon: <FiSmile />,
-    title: "Client-Centric Approach",
-    description: "Your needs are our priority. We understand that every project is unique and tailor our solutions accordingly.",
-  },
-  {
-    icon: <FiUserCheck />,
-    title: "Transparent Process",
-    description: "We involve you in every stage, keeping you constantly informed of the progress through transparent communication.",
-  },
-  {
-    icon: <FiHeadphones />,
-    title: "Continuous Support",
-    description: "We provide comprehensive technical support after delivery, ensuring ease of use and maximum security.",
-  },
-  {
-    icon: <FiBookOpen />,
-    title: "Empowerment & Training",
-    description: "We offer free training on our platforms to ensure you get the most out of our digital services.",
-  },
-  {
-    icon: <FaRegLightbulb />,
-    title: "Strategic Consulting",
-    description: "Our marketing and electronic consultations help you achieve your business goals efficiently and effectively.",
-  },
-  {
-    icon: <FiClock />,
-    title: "Long-term Commitment",
-    description: "Our relationship doesn't end at delivery. We're always ready to assist and support your future growth.",
-  },
-  {
-    icon: <FiFileText />,
-    title: "Reliability & Trust",
-    description: "We respect contract terms, prioritize your privacy, and guarantee on-time delivery for every project.",
-  },
-  {
-    icon: <FiCode />,
-    title: "Modern Technologies",
-    description: "We use the latest scalable languages and methods, ensuring your project stays future-proof and robust.",
-  },
-];
+import { useTranslations } from "next-intl";
 
 const FeaturesSection = () => {
+  const t = useTranslations("home.features");
+
+  const features = [
+    {
+      icon: <FiSmile />,
+      title: t("items.client_centric.title"),
+      description: t("items.client_centric.description"),
+    },
+    {
+      icon: <FiUserCheck />,
+      title: t("items.transparent.title"),
+      description: t("items.transparent.description"),
+    },
+    {
+      icon: <FiHeadphones />,
+      title: t("items.support.title"),
+      description: t("items.support.description"),
+    },
+    {
+      icon: <FiBookOpen />,
+      title: t("items.training.title"),
+      description: t("items.training.description"),
+    },
+    {
+      icon: <FaRegLightbulb />,
+      title: t("items.consulting.title"),
+      description: t("items.consulting.description"),
+    },
+    {
+      icon: <FiClock />,
+      title: t("items.commitment.title"),
+      description: t("items.commitment.description"),
+    },
+    {
+      icon: <FiFileText />,
+      title: t("items.reliability.title"),
+      description: t("items.reliability.description"),
+    },
+    {
+      icon: <FiCode />,
+      title: t("items.technology.title"),
+      description: t("items.technology.description"),
+    },
+  ];
+
   return (
     <section className="py-24 bg-gray-50/50 relative overflow-hidden">
       <div className="container-lg">
         {/* Header */}
-        <div className="flex flex-col items-center text-center mb-20">
+        <div className="flex flex-col items-center text-center mb-16">
           <div className="flex items-center gap-3 mb-6 relative">
             <span className="w-4 h-4 bg-ant-gold rounded-full shadow-[0_0_15px_rgba(186,149,84,0.6)] animate-pulse"></span>
             <div className="relative">
               <div className="absolute -inset-x-4 -inset-y-1 bg-ant-gold/10 skew-x-[-15deg] rounded-lg -z-10"></div>
               <h2 className="text-3xl md:text-4xl font-black text-dark-navy tracking-tight">
-                Why Choose Us
+                {t("title")}
               </h2>
             </div>
           </div>
-          <p className="text-soft-gray text-lg max-w-2xl font-medium">
-             We excel in providing high-quality digital solutions that set your business apart from the competition.
+          <p className="text-soft-gray text-lg md:text-xl font-medium max-w-3xl leading-relaxed">
+            {t("subtitle")}
           </p>
         </div>
 
@@ -92,7 +95,7 @@ const FeaturesSection = () => {
               <h3 className="text-lg font-bold text-dark-navy mb-4 leading-tight group-hover:text-ant-gold transition-colors">
                 {item.title}
               </h3>
-              <p className="text-soft-gray text-sm leading-relaxed opacity-80">
+              <p className="text-gray-600 leading-relaxed opacity-80">
                 {item.description}
               </p>
               
@@ -106,3 +109,4 @@ const FeaturesSection = () => {
 };
 
 export default FeaturesSection;
+

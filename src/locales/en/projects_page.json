@@ -1,0 +1,98 @@
+{
+  "hero": {
+    "title": "Our Projects",
+    "subtitle": "At Sirrush, we combine software solutions with marketing creativity to drive your business to the top.",
+    "breadcrumb_home": "Home",
+    "breadcrumb_projects": "Projects"
+  },
+  "filters": {
+    "label": "Our Projects",
+    "title": "Learn about our work and join the success stories",
+    "categories": {
+      "all": "All",
+      "web": "Web Development",
+      "mobile": "Mobile Development",
+      "branding": "Branding",
+      "social": "Social Media",
+      "creative": "Creative Campaigns"
+    }
+  },
+  "project_card": {
+    "tech_label": "Technologies",
+    "view_btn": "Full Project"
+  },
+  "data": [
+    {
+      "id": "lirat",
+      "category": "web",
+      "title": "Lirat",
+      "description": "Global money transfer management system in multiple currencies, securely and with high flow in minutes.",
+      "image": "/hero.webp",
+
+      "technologies": ["nextjs", "tailwind", "nodejs", "mongodb"]
+    },
+    {
+      "id": "oak",
+      "category": "web",
+      "title": "Oak",
+      "description": "The Oak website embodies the spirit of the brand. Simplicity of better design with striking attractive details. It offers a calm...",
+      "image": "/expertise-team.png",
+
+      "technologies": ["react", "framer", "css"]
+    },
+    {
+      "id": "sherif",
+      "category": "mobile",
+      "title": "Dr.Sherif El Nikety",
+      "description": "A digital platform developed specifically and professionally to represent Dr. Sherif El Nikety, making it easier for patients to access and the services.",
+      "image": "/proj.png",
+
+      "technologies": ["flutter", "firebase", "dart"]
+    },
+    {
+      "id": "nawar",
+      "category": "branding",
+      "title": "Dr.Nawar",
+      "description": "Dr. Nawar has become a trusted digital reference for anyone seeking unbiased pharmaceutical knowledge in the field of cosmetics.",
+      "image": "/hero-mobile.webp",
+
+      "technologies": ["figma", "photoshop", "illustrator"]
+    },
+    {
+      "id": "alyazeed",
+      "category": "web",
+      "title": "Al-Yazeed",
+      "description": "We developed the official website for Alyazeed Advanced Company, a contracting and interior finishing firm.",
+      "image": "/hero.webp",
+
+      "technologies": ["wordpress", "elementor", "php"]
+    },
+    {
+      "id": "abdelbaky",
+      "category": "branding",
+      "title": "Mostafa Abdelbaky",
+      "description": "Sirrush developed the official website for Mostafa Abdelbaky Architect and Designs.",
+      "image": "/expertise-team.png",
+
+      "technologies": ["figma", "aftereffects"]
+    },
+    {
+      "id": "dirat",
+      "category": "web",
+      "title": "Dirat Elbinaa",
+      "description": "Sirrush developed the official website for Dirat Elbinaa, a specialized construction...",
+      "image": "/proj.png",
+
+      "technologies": ["nextjs", "typescript", "postgres"]
+    },
+    {
+      "id": "joud",
+      "category": "mobile",
+      "title": "Al Joud Med Website",
+      "description": "Sirrush developed the website for Al Joud Med, a store specializing in...",
+      "image": "/hero-mobile.webp",
+
+      "technologies": ["flutter", "strapi"]
+    }
+  ]
+}

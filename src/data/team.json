@@ -1,0 +1,92 @@
+[
+  {
+    "id": "ceo",
+    "name": { "en": "Eng. Mohamed Elsayed", "ar": "م. محمد السيد" },
+    "role": { "en": "Chief Executive Officer", "ar": "الرئيس التنفيذي" },
+    "image": "/team/m1.webp"
+  },
+  {
+    "id": "cbo",
+    "name": { "en": "Dr. Mahmoud Alshemy", "ar": "د. محمود الشيمي" },
+    "role": { "en": "Head of Market Access & Business Development", "ar": "رئيس قسم تطوير الأعمال" },
+    "image": "/team/m2.webp"
+  },
+  {
+    "id": "cto",
+    "name": { "en": "Eng. Mohamed Reda", "ar": "م. محمد رضا" },
+    "role": { "en": "Chief Technology Officer", "ar": "المدير التقني" },
+    "image": "/team/m3.webp"
+  },
+  {
+    "id": "delivery",
+    "name": { "en": "Eng. Khaled Elbayoumy", "ar": "م. خالد البيومي" },
+    "role": { "en": "Software Delivery Manager", "ar": "مدير تسليم البرمجيات" },
+    "image": "/team/m4.webp"
+  },
+  {
+    "id": "marketing",
+    "name": { "en": "Eng. Mohamed Attia", "ar": "م. محمد عطية" },
+    "role": { "en": "Marketing Director", "ar": "مدير التسويق" },
+    "image": "/team/m5.webp"
+  },
+  {
+    "id": "hr",
+    "name": { "en": "Eng. Hend Anwar", "ar": "م. هند أنور" },
+    "role": { "en": "Senior HR Business Partner", "ar": "شريك أعمال الموارد البشرية" },
+    "image": "/team/m6.webp"
+  },
+  {
+    "id": "coordinator",
+    "name": { "en": "Reem Ahmed", "ar": "ريم أحمد" },
+    "role": { "en": "Project Coordinator", "ar": "منسق مشروع" },
+    "image": "/team/m7.webp"
+  },
+  {
+    "id": "team_leader",
+    "name": { "en": "Omar Elsayed", "ar": "عمر السيد" },
+    "role": { "en": "Front-End Team Leader", "ar": "قائد فريق الواجهة الأمامية" },
+    "image": "/team/m8.webp"
+  },
+  {
+    "id": "frontend",
+    "name": { "en": "Yahya Alrefaei", "ar": "يحيى الرفاعي" },
+    "role": { "en": "Front-End Developer", "ar": "مطور واجهة أمامية" },
+    "image": "/team/m9.webp"
+  },
+  {
+    "id": "backend",
+    "name": { "en": "Basel Diab", "ar": "باسل دياب" },
+    "role": { "en": "Back-End Developer", "ar": "مطور واجهة خلفية" },
+    "image": "/team/m10.webp"
+  },
+  {
+    "id": "frontend2",
+    "name": { "en": "Mohamed Ragheb", "ar": "محمد راغب" },
+    "role": { "en": "Front-End Developer", "ar": "مطور واجهة أمامية" },
+    "image": "/team/m11.webp"
+  },
+  {
+    "id": "wordpress",
+    "name": { "en": "Abdelrahman Naeim", "ar": "عبد الرحمن نعيم" },
+    "role": { "en": "WordPress Developer", "ar": "مطور ووردبريس" },
+    "image": "/team/m12.webp"
+  },
+  {
+    "id": "backend2",
+    "name": { "en": "Ahmed Mahrez", "ar": "أحمد محرز" },
+    "role": { "en": "Back-End Developer", "ar": "مطور واجهة خلفية" },
+    "image": "/team/m13.webp"
+  },
+  {
+    "id": "backend3",
+    "name": { "en": "Kamal Abouzaid", "ar": "كمال أبوزيد" },
+    "role": { "en": "Back-End Developer", "ar": "مطور واجهة خلفية" },
+    "image": "/team/m14.webp"
+  },
+  {
+    "id": "backend4",
+    "name": { "en": "Dalia Refaat", "ar": "داليا رفعت" },
+    "role": { "en": "Back-End Developer", "ar": "مطور واجهة خلفية" },
+    "image": "/team/m15.webp"
+  }
+]

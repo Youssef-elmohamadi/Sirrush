@@ -4,44 +4,46 @@ import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { FiLayers, FiUsers, FiUserCheck, FiAward } from "react-icons/fi";
-
-const stats = [
-  {
-    id: 1,
-    icon: <FiLayers />,
-    number: 500,
-    label: "Complete Projects",
-  },
-  {
-    id: 2,
-    icon: <FiUserCheck />,
-    number: 400,
-    label: "Happy Clients",
-  },
-  {
-    id: 3,
-    icon: <FiUsers />,
-    number: 100,
-    label: "Team Members",
-  },
-  {
-    id: 4,
-    icon: <FiAward />,
-    number: 8,
-    label: "Years of Experience",
-  },
-];
+import { useTranslations } from "next-intl";
 
 const StatsSection = () => {
+  const t = useTranslations("home.stats");
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.3,
   });
 
+  const stats = [
+    {
+      id: 1,
+      icon: <FiLayers />,
+      number: 500,
+      label: t("projects"),
+    },
+    {
+      id: 2,
+      icon: <FiUserCheck />,
+      number: 400,
+      label: t("clients"),
+    },
+    {
+      id: 3,
+      icon: <FiUsers />,
+      number: 100,
+      label: t("team"),
+    },
+    {
+      id: 4,
+      icon: <FiAward />,
+      number: 8,
+      label: t("experience"),
+    },
+  ];
+
   return (
     <section ref={ref} className="py-24 bg-white relative overflow-hidden">
       {/* Decorative background glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-ant-gold/5 blur-[120px] rounded-full -z-0"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] blur-[120px] rounded-full -z-0"></div>
 
       <div className="container-lg relative z-10">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12">
@@ -69,7 +71,7 @@ const StatsSection = () => {
               </h3>
 
               {/* Label */}
-              <p className="text-soft-gray uppercase text-xs font-black tracking-[0.2em] max-w-[150px] leading-relaxed group-hover:text-dark-navy transition-colors">
+              <p className="text-soft-gray uppercase text-sm md:text-base font-bold tracking-wide max-w-[150px] leading-relaxed group-hover:text-dark-navy transition-colors">
                 {stat.label}
               </p>
               

@@ -1,0 +1,41 @@
+{
+  "tagline": "Software Solutions",
+  "description": "We are a leading software company, creating innovative and effective websites and applications that enhance your brand and increase your revenue.",
+  "fast_links": {
+    "title": "Fast Links",
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "projects": "Our Projects",
+    "team": "Our Team",
+    "blog": "Blogs"
+  },
+  "services": {
+    "title": "Services",
+    "list": [
+      "Software Development",
+      "UI & UX Development",
+      "Web Development",
+      "Mobile Development",
+      "E-commerce",
+      "Performance Marketing",
+      "Graphic Design",
+      "Branding",
+      "Media Buying",
+      "Social Media Management",
+      "SEO",
+      "Content Creation",
+      "E-commerce Marketing",
+      "Media Production"
+    ]
+  },
+  "contact": {
+    "title": "Contact Info",
+    "address": "New Cairo, Egypt"
+  },
+  "vision": {
+    "text": "Egypt Vision",
+    "year": "2030"
+  },
+  "copyright": "© {year} <span>Sirrush</span>. All rights reserved."
+}

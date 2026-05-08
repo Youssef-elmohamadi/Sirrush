@@ -1,7 +1,6 @@
 // components/NavLink.jsx
 "use client";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { Link, usePathname } from "@/i18n/navigation";
 
 const NavLink = ({ href, children }) => {
   const pathname = usePathname();
@@ -12,7 +11,7 @@ const NavLink = ({ href, children }) => {
       <Link
         href={href}
         className={`
-          relative block px-3 py-3 md:text-[15px] lg:text-[16px] font-medium transition-all duration-300
+          relative block px-3 py-3 md:text-[15px] lg:text-[16px] font-bold transition-all duration-300
           ${
             isActive
               ? "text-ant-gold bg-deep-navy shadow-lg"
@@ -29,3 +28,4 @@ const NavLink = ({ href, children }) => {
 };
 
 export default NavLink;
+

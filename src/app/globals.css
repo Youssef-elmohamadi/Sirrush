@@ -3,13 +3,28 @@
 @theme {
   --breakpoint-container-lg: 1280px;
   --breakpoint-container-sm: 800px;
-  --color-ant-gold: #ba9554;
-  --color-deep-navy: #081d2c;
+  --color-ant-gold: #C5A059;
+  --color-deep-navy: #0B0E14;
   --color-pure-white: #ffffff;
   --color-saudi-green: #006c35;
   --color-soft-gray: #6c757d;
   --color-dark-navy: #1f324a;
+  
+  --font-outfit: var(--font-outfit), sans-serif;
+  --font-cairo: var(--font-cairo), sans-serif;
 }
+
+@layer base {
+  body {
+    font-family: var(--font-outfit);
+  }
+  
+  [dir="rtl"] body,
+  [dir="rtl"] {
+    font-family: var(--font-cairo);
+  }
+}
+
 
 @utility custom-container {
   width: 100%;

@@ -1,0 +1,90 @@
+[
+  {
+    "id": "lirat",
+    "category": "web",
+    "title": { "en": "Lirat", "ar": "ليرات" },
+    "description": { 
+      "en": "Global money transfer management system in multiple currencies, securely and with high flow in minutes.", 
+      "ar": "نظام عالمي لإدارة تحويل الأموال بعملات متعددة، بشكل آمن وبسرعة عالية خلال دقائق."
+    },
+    "image": "/hero.webp",
+    "technologies": ["nextjs", "tailwind", "nodejs", "mongodb"]
+  },
+  {
+    "id": "oak",
+    "category": "web",
+    "title": { "en": "Oak", "ar": "أوك (Oak)" },
+    "description": { 
+      "en": "The Oak website embodies the spirit of the brand. Simplicity of better design with striking attractive details. It offers a calm experience.", 
+      "ar": "يجسد موقع أوك روح العلامة التجارية. بساطة التصميم الأفضل مع تفاصيل جذابة لافتة للنظر. يوفر تجربة هادئة."
+    },
+    "image": "/expertise-team.png",
+    "technologies": ["react", "framer"]
+  },
+  {
+    "id": "sherif",
+    "category": "mobile",
+    "title": { "en": "Dr.Sherif El Nikety", "ar": "د. شريف النيكيتي" },
+    "description": { 
+      "en": "A digital platform developed specifically and professionally to represent Dr. Sherif El Nikety, making it easier for patients to access the services.", 
+      "ar": "منصة رقمية تم تطويرها خصيصاً وباحترافية لتمثيل د. شريف النيكيتي، مما يسهل على المرضى الوصول والخدمات."
+    },
+    "image": "/proj.png",
+    "technologies": ["flutter", "firebase", "dart"]
+  },
+  {
+    "id": "nawar",
+    "category": "branding",
+    "title": { "en": "Dr.Nawar", "ar": "د. نوار" },
+    "description": { 
+      "en": "Dr. Nawar has become a trusted digital reference for anyone seeking unbiased pharmaceutical knowledge in the field of cosmetics.", 
+      "ar": "أصبح د. نوار مرجعاً رقمياً موثوقاً لأي شخص يبحث عن معرفة صيدلانية غير منحازة في مجال التجميل."
+    },
+    "image": "/hero-mobile.webp",
+    "technologies": ["figma", "photoshop", "illustrator"]
+  },
+  {
+    "id": "alyazeed",
+    "category": "web",
+    "title": { "en": "Al-Yazeed", "ar": "اليزيد" },
+    "description": { 
+      "en": "We developed the official website for Alyazeed Advanced Company, a contracting and interior finishing firm.", 
+      "ar": "قمنا بتطوير الموقع الرسمي لشركة اليزيد المتقدمة، وهي شركة للمقاولات والتشطيبات الداخلية."
+    },
+    "image": "/hero.webp",
+    "technologies": ["wordpress", "elementor", "php"]
+  },
+  {
+    "id": "abdelbaky",
+    "category": "branding",
+    "title": { "en": "Mostafa Abdelbaky", "ar": "مصطفى عبد الباقي" },
+    "description": { 
+      "en": "Sirrush developed the official website for Mostafa Abdelbaky Architect and Designs.", 
+      "ar": "قامت سيروش بتطوير الموقع الرسمي للمهندس مصطفى عبد الباقي للتصميم المعماري."
+    },
+    "image": "/expertise-team.png",
+    "technologies": ["figma", "aftereffects"]
+  },
+  {
+    "id": "dirat",
+    "category": "web",
+    "title": { "en": "Dirat Elbinaa", "ar": "ديرة البناء" },
+    "description": { 
+      "en": "Sirrush developed the official website for Dirat Elbinaa, a specialized construction company.", 
+      "ar": "قامت سيروش بتطوير الموقع الرسمي لديرة البناء، المتخصصة في الإنشاءات."
+    },
+    "image": "/proj.png",
+    "technologies": ["nextjs", "typescript", "postgres"]
+  },
+  {
+    "id": "joud",
+    "category": "mobile",
+    "title": { "en": "Al Joud Med Website", "ar": "موقع الجود ميد" },
+    "description": { 
+      "en": "Sirrush developed the website for Al Joud Med, a store specializing in medical supplies.", 
+      "ar": "قامت سيروش بتطوير موقع الجود ميد، وهو متجر متخصص في المستلزمات الطبية."
+    },
+    "image": "/hero-mobile.webp",
+    "technologies": ["flutter", "strapi"]
+  }
+]

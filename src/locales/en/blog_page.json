@@ -1,0 +1,74 @@
+{
+  "hero": {
+    "title": "Blog",
+    "subtitle": "The latest insights and trends in the world of software and marketing to help you stay ahead of the curve.",
+    "breadcrumb_home": "Home",
+    "breadcrumb_blog": "Blog"
+  },
+  "grid": {
+    "label": "Our Blog",
+    "title": "Stay Updated with Our Latest News",
+    "read_more": "Read More"
+  },
+  "sidebar": {
+    "contact_title": "Contact Us",
+    "name_label": "Name",
+    "phone_label": "Phone Number",
+    "service_label": "Choose Services",
+    "message_label": "Write Message...",
+    "send_btn": "Send"
+  },
+  "related": {
+    "title": "Related articles"
+  },
+  "posts": [
+    {
+      "id": "web-dev-dubai",
+      "title": "Web development company dubai | Build Bold, Code Smart, Win Big",
+      "image": "/hero.webp",
+      "date": "Oct 24, 2024",
+      "category": "Web Development",
+      "content": "Looking for a web development company in Dubai that truly understands your vision? We blend innovation with elegance to craft experiences your audience won't forget. In today's digital age, your website is your storefront. It needs to be more than just pretty; it needs to be smart, fast, and secure. Our team of experts uses the latest technologies like Next.js and Tailwind CSS to ensure your site is at the cutting edge. We focus on SEO, performance, and user experience to help you win big in the competitive Dubai market."
+    },
+    {
+      "id": "design-dubai",
+      "title": "Design Company in Dubai | Where Innovation Meets Aesthetic Excellence",
+      "image": "/expertise-team.png",
+      "date": "Oct 20, 2024",
+      "category": "UI/UX Design",
+      "content": "Innovation meets elegance in our design philosophy. As a leading design company in Dubai, we don't just create; we elevate. Our process starts with deep research into your brand's soul, translating it into visual languages that speak to your customers. From UI/UX design to branding and graphic design, we ensure every touchpoint is a masterpiece of aesthetic excellence. Ready to turn bold ideas into unforgettable designs? Let's build something iconic together."
+    },
+    {
+      "id": "mobile-app-dubai",
+      "title": "Mobile app development company in Dubai | Build your own app",
+      "image": "/proj.png",
+      "date": "Oct 15, 2024",
+      "category": "Mobile Apps",
+      "content": "Thinking an app is too expensive? Think again! With Sirrush, your app investment is smarter than ever. We develop high-performance mobile applications for iOS and Android that provide a seamless user experience. Our team guides you through the entire journey, from ideation and wireframing to launch and maintenance. We focus on scalability and security, ensuring your app grows with your business. Join the mobile revolution today."
+    },
+    {
+      "id": "build-smarter",
+      "title": "Best software company for Your Business Growth | Build Smarter, Grow Faster",
+      "image": "/hero-mobile.webp",
+      "date": "Oct 10, 2024",
+      "category": "Software Solutions",
+      "content": "Build Smarter, Grow Faster. That's our promise to you. As the best software company for your business growth, we provide custom software solutions that streamline your operations and enhance productivity. Whether it's a CRM, ERP, or a custom internal tool, we have the expertise to deliver. We use agile methodologies to ensure fast delivery and continuous improvement. Let us help you reach your full potential with software that works for you."
+    },
+    {
+      "id": "digital-transformation",
+      "title": "Digital Transformation: The Future of Business in Egypt",
+      "image": "/hero.webp",
+      "date": "Oct 05, 2024",
+      "category": "Business",
+      "content": "The digital transformation journey in Egypt is accelerating. Is your business ready? We explore the latest trends and technologies driving this change, from cloud computing to AI-driven insights. Sirrush is committed to being your partner in this journey, providing the tools and strategies needed to thrive in the new digital economy. Learn how to adapt, evolve, and lead in the Egyptian market."
+    },
+    {
+      "id": "app-design-steps",
+      "title": "How to design an app and earn from it step by step",
+      "image": "/expertise-team.png",
+      "date": "Oct 01, 2024",
+      "category": "Education",
+      "content": "Designing an app is only the first step. Earning from it is the goal. We break down the process step-by-step, covering monetization strategies, user retention, and market positioning. Learn from real-world examples and design templates that convert. Whether you're an entrepreneur or a designer, this guide will provide the insights needed to turn your app idea into a profitable reality."
+    }
+  ]
+}

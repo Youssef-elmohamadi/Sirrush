@@ -1,0 +1,98 @@
+{
+  "hero": {
+    "title": "مشاريعنا",
+    "subtitle": "في سيروش، نجمع بين الحلول البرمجية والإبداع التسويقي لدفع عملك إلى القمة.",
+    "breadcrumb_home": "الرئيسية",
+    "breadcrumb_projects": "المشاريع"
+  },
+  "filters": {
+    "label": "مشاريعنا",
+    "title": "تعرف على أعمالنا وانضم إلى قصص النجاح",
+    "categories": {
+      "all": "الكل",
+      "web": "تطوير المواقع",
+      "mobile": "تطوير التطبيقات",
+      "branding": "الهوية البصرية",
+      "social": "وسائل التواصل",
+      "creative": "الحملات الإبداعية"
+    }
+  },
+  "project_card": {
+    "tech_label": "التقنيات المستخدمة",
+    "view_btn": "تفاصيل المشروع"
+  },
+  "data": [
+    {
+      "id": "lirat",
+      "category": "web",
+      "title": "ليرات",
+      "description": "نظام عالمي لإدارة تحويل الأموال بعملات متعددة، بشكل آمن وبسرعة عالية خلال دقائق.",
+      "image": "/hero.webp",
+
+      "technologies": ["nextjs", "tailwind", "nodejs", "mongodb"]
+    },
+    {
+      "id": "oak",
+      "category": "web",
+      "title": "أوك (Oak)",
+      "description": "يجسد موقع أوك روح العلامة التجارية. بساطة التصميم الأفضل مع تفاصيل جذابة لافتة للنظر. يوفر تجربة هادئة...",
+      "image": "/expertise-team.png",
+
+      "technologies": ["react", "framer", "css"]
+    },
+    {
+      "id": "sherif",
+      "category": "mobile",
+      "title": "د. شريف النيكيتي",
+      "description": "منصة رقمية تم تطويرها خصيصاً وباحترافية لتمثيل د. شريف النيكيتي، مما يسهل على المرضى الوصول والخدمات.",
+      "image": "/proj.png",
+
+      "technologies": ["flutter", "firebase", "dart"]
+    },
+    {
+      "id": "nawar",
+      "category": "branding",
+      "title": "د. نوار",
+      "description": "أصبح د. نوار مرجعاً رقمياً موثوقاً لأي شخص يبحث عن معرفة صيدلانية غير منحازة في مجال التجميل.",
+      "image": "/hero-mobile.webp",
+
+      "technologies": ["figma", "photoshop", "illustrator"]
+    },
+    {
+      "id": "alyazeed",
+      "category": "web",
+      "title": "اليزيد",
+      "description": "قمنا بتطوير الموقع الرسمي لشركة اليزيد المتقدمة، وهي شركة للمقاولات والتشطيبات الداخلية.",
+      "image": "/hero.webp",
+
+      "technologies": ["wordpress", "elementor", "php"]
+    },
+    {
+      "id": "abdelbaky",
+      "category": "branding",
+      "title": "مصطفى عبد الباقي",
+      "description": "قامت سيروش بتطوير الموقع الرسمي للمهندس مصطفى عبد الباقي للتصميم المعماري.",
+      "image": "/expertise-team.png",
+
+      "technologies": ["figma", "aftereffects"]
+    },
+    {
+      "id": "dirat",
+      "category": "web",
+      "title": "ديرة البناء",
+      "description": "قامت سيروش بتطوير الموقع الرسمي لديرة البناء، المتخصصة في الإنشاءات...",
+      "image": "/proj.png",
+
+      "technologies": ["nextjs", "typescript", "postgres"]
+    },
+    {
+      "id": "joud",
+      "category": "mobile",
+      "title": "موقع الجود ميد",
+      "description": "قامت سيروش بتطوير موقع الجود ميد، وهو متجر متخصص في...",
+      "image": "/hero-mobile.webp",
+
+      "technologies": ["flutter", "strapi"]
+    }
+  ]
+}
